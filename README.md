@@ -8,6 +8,9 @@ the `dict` to contain more data than available in RAM. The drawback is that
 the dict becomes much slower, but still usable.
 
 
+PS. It's my first Python project, comments are welcome :P
+
+
 
 USAGE EXAMPLE
 =============
@@ -69,3 +72,10 @@ SSD Laptop cache_size=1000000
     Read RND: n=1000000, s='a'*1024, ops/s=409498
 
 
+
+HISTORY
+=======
+
+2014-01-23:
+
+    First release.

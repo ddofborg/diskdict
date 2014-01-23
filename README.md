@@ -64,8 +64,8 @@ SSD Laptop cache_size=0
     Read RND: n=1000000, s=range(100), ops/s=26072
 
 
-SSD Laptop cache_size=1000000
------------------------------
+SSD Laptop cache_size=1000000 (disk not used)
+---------------------------------------------
 
     Write   : n=1000000, s='a'*1024, ops/s=316754
     Read SEQ: n=1000000, s='a'*1024, ops/s=704680

@@ -1,4 +1,4 @@
-WHAT IS THIS?
+What Is This?
 =============
 
 DiskDict is a replacement for Python `dict` object with one big difference.
@@ -7,12 +7,12 @@ disk will be used to store newly added data. This makes it possible for
 the `dict` to contain more data than the available RAM. The drawback is that
 the dict becomes much slower, but still usable.
 
+The disk data is stored in a temp file, which is removed by the OS when process
+exists.
 
-PS. It's my first Python project, comments are welcome :P
 
 
-
-USAGE EXAMPLE
+Usage Example
 =============
 
 DiskDict could/should be used as a default `dict` object.
@@ -48,7 +48,7 @@ DiskDict could/should be used as a default `dict` object.
 
 
 
-SPEED TESTS
+Speed Tests
 ===========
 
 
@@ -73,7 +73,7 @@ SSD Laptop cache_size=1000000 (disk not used)
 
 
 
-HISTORY
+History
 =======
 
 2014-01-23:

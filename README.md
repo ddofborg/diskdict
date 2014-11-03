@@ -4,7 +4,7 @@ WHAT IS THIS?
 DiskDict is a replacement for Python `dict` object with one big difference.
 When the number of items in the `dict` is larger than `cache_size`, the
 disk will be used to store newly added data. This makes it possible for
-the `dict` to contain more data than available in RAM. The drawback is that
+the `dict` to contain more data than the available RAM. The drawback is that
 the dict becomes much slower, but still usable.
 
 

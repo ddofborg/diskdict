@@ -43,8 +43,9 @@ DiskDict could/should be used as a default `dict` object.
 
     # d = {1: -1, 2: -4, 3: -9, 4: -16, 5: -25, 40: 1600, 10: 100, 50: 2500, 20: 400, 30: 900}
 
-    # d.counters == {'mem_hits': 6, 'misses': 0, 'set_ops': 15, 'get_ops': 25, 'mem_items': 2,
-    #                'disk_items': 8, 'disk_hits': 19, 'del_ops': 0}
+    # d.counters = {'mem_hits': 6, 'misses': 0, 'cache_file_size': 63, 'set_ops': 15,
+    #               'get_ops': 25, 'mem_items': 1, 'disk_items': 8, 'disk_hits': 19,
+    #               'len': 9, 'del_ops': 1}
 
 
 
@@ -75,6 +76,11 @@ SSD Laptop cache_size=1000000 (disk not used)
 
 History
 =======
+
+2014-11-04:
+
+    Added more dict-methods
+
 
 2014-01-23:
 

@@ -82,6 +82,14 @@ class DiskDict(dict):
 			self._counters['disk_items'] -= 1
 
 
+	def __repr__(self):
+		return { k : self[k] for k in iter(self) }
+
+
+	def __eq__(self, i):
+		return { k : self[k] for k in iter(self) } == i
+
+
 	def __str__(self):
 		return unicode( { k : self[k] for k in iter(self) } )
 

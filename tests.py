@@ -17,7 +17,7 @@ def test_basics():
 	d[3] = 9
 	d[4] = 16
 	d[5] = 25
-	assert( str(d) == '{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}' )
+	assert( d == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25} )
 	print ".",
 	assert( len(d) == 5 )
 	print ".",
@@ -26,7 +26,7 @@ def test_basics():
 	d[30] = 900
 	d[40] = 1600
 	d[50] = 2500
-	assert( str(d) == '{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 40: 1600, 10: 100, 50: 2500, 20: 400, 30: 900}' )
+	assert( d == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 40: 1600, 10: 100, 50: 2500, 20: 400, 30: 900} )
 	print ".",
 	assert( len(d) == 10 )
 	print ".",
@@ -36,7 +36,7 @@ def test_basics():
 	d[4] = -16
 	d[5] = -25
 
-	assert( str(d) == '{1: -1, 2: -4, 3: -9, 4: -16, 5: -25, 40: 1600, 10: 100, 50: 2500, 20: 400, 30: 900}' )
+	assert( d == {1: -1, 2: -4, 3: -9, 4: -16, 5: -25, 40: 1600, 10: 100, 50: 2500, 20: 400, 30: 900} )
 	print ".",
 	assert( len(d) == 10 )
 	print ".",
@@ -45,7 +45,7 @@ def test_basics():
 	assert( len(d) == 9 )
 	print ".",
 
-	assert( str(d.counters) == "{'mem_hits': 6, 'misses': 0, 'set_ops': 15, 'get_ops': 25, 'mem_items': 1, 'disk_items': 8, 'disk_hits': 19, 'del_ops': 1}" )
+	assert( d.counters == {'mem_hits': 6, 'misses': 0, 'cache_file_size': 63, 'set_ops': 15, 'get_ops': 25, 'mem_items': 1, 'disk_items': 8, 'disk_hits': 19, 'len': 9, 'del_ops': 1} )
 	print ".",
 	print
 	print "  Counters: " + str(d.counters)
